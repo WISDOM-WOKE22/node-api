@@ -10,6 +10,14 @@ app.get('/', (  req, res) => {
     })
 })
 
+app.get('/me', ( req, res ) => {
+    res.status(200)
+    .json({
+        status: 'success',
+        message: 'This a route handler'
+    })
+})
+
 app.listen( 3000, () => {
     console.log('Application running at port 3000')
 })
