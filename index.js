@@ -18,6 +18,14 @@ app.get('/me', ( req, res ) => {
     })
 })
 
+app.get('/test', ( req, res) => {
+    res.status(200)
+    .json({
+        status: 'success',
+        message: 'testing the API'
+    })
+} )
+
 app.listen( 3000, () => {
     console.log('Application running at port 3000')
 })
